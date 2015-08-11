@@ -1,0 +1,1498 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BI.Interface</name>
+    </assembly>
+    <members>
+        <member name="T:BI.Interface.ApiControllers.BaseApiController">
+            <summary>
+            Base controller for all API controller.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.ApiControllers.DataAccessApiController`3">
+            <summary>
+            API Controller with implemented data access service.
+            </summary>
+            <typeparam name="TEntity">Entity based class type.</typeparam>
+            <typeparam name="TCreateInput">Create input view model.</typeparam>
+            <typeparam name="TEditInput">Edit input view model.</typeparam>
+        </member>
+        <member name="F:BI.Interface.ApiControllers.DataAccessApiController`3.DataService">
+            <summary>
+            The data access service
+            </summary>
+        </member>
+        <member name="F:BI.Interface.ApiControllers.DataAccessApiController`3._createMapper">
+            <summary>
+            The data mapper for create view model
+            </summary>
+        </member>
+        <member name="F:BI.Interface.ApiControllers.DataAccessApiController`3._editMapper">
+            <summary>
+            The data mapper for edit view model
+            </summary>
+        </member>
+        <member name="M:BI.Interface.ApiControllers.DataAccessApiController`3.#ctor(BI.Core.Service.IDataService{`0},BI.Interface.Infrastructure.Mappers.IMapper{`0,`1},BI.Interface.Infrastructure.Mappers.IMapper{`0,`2})">
+            <summary>
+            Initializes a new instance of the <see cref="T:BI.Interface.ApiControllers.DataAccessApiController`3" /> class.
+            </summary>
+            <param name="dataService">The data service.</param>
+            <param name="createMapper">The create data mapper.</param>
+            <param name="editMapper">The edit data mapper.</param>
+        </member>
+        <member name="M:BI.Interface.ApiControllers.DataAccessApiController`3.Create(`1)">
+            <summary>
+            Creates/Inserts the new item/object into repository.
+            </summary>
+            <param name="inputData">The input data (create view model).</param>
+            <returns>IHttpActionResult with newly created/inserted item.</returns>
+            <remarks>
+            This method description will not show in help page because it use generic argument which is not support yet.
+            Read more at: http://stackoverflow.com/questions/19646987/webapi-help-page-documentation-for-return-or-parameter-model-class-properties
+            </remarks>
+        </member>
+        <member name="M:BI.Interface.ApiControllers.DataAccessApiController`3.Get(System.UInt64)">
+            <summary>
+            Gets the specified item/object by unique identifier from repository.
+            </summary>
+            <param name="uid">The item's unique identifier.</param>
+            <returns>IHttpActionResult with specified item.</returns>
+        </member>
+        <member name="M:BI.Interface.ApiControllers.DataAccessApiController`3.GetAll">
+            <summary>
+            Gets all items/objects from repository.
+            </summary>
+            <returns>The item collection (IEnumerable).</returns>
+            <exception cref="T:System.Web.Http.HttpResponseException">404</exception>
+        </member>
+        <member name="M:BI.Interface.ApiControllers.DataAccessApiController`3.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Gets specific size and page of items/objects from repository.
+            </summary>
+            <param name="p">The page number.</param>
+            <param name="s">The size of item per page.</param>
+            <returns>The item collection (IEnumerable).</returns>
+            <exception cref="T:System.Web.Http.HttpResponseException">404</exception>
+        </member>
+        <member name="M:BI.Interface.ApiControllers.DataAccessApiController`3.Update(System.UInt64,`2)">
+            <summary>
+            Update the specified items/objects in repository.
+            </summary>
+            <param name="uid">The item's unique identifier.</param>
+            <param name="inputData">The input data (edit view model).</param>
+            <returns>IHttpActionResult with updated created/inserted item.</returns>
+            <remarks>
+            This method description will not show in help page because it use generic argument which is not support yet.
+            Read more at: http://stackoverflow.com/questions/19646987/webapi-help-page-documentation-for-return-or-parameter-model-class-properties
+            </remarks>
+        </member>
+        <member name="M:BI.Interface.ApiControllers.DataAccessApiController`3.Delete(System.UInt64)">
+            <summary>
+            Deletes the specified item/object in repository.
+            </summary>
+            <param name="uid">The item's unique identifier.</param>
+            <returns>IHttpActionResult.</returns>
+        </member>
+        <member name="M:BI.Interface.ApiControllers.DataAccessApiController`3.Restore(System.UInt64)">
+            <summary>
+            Restores the specified deleted item/object in repository.
+            </summary>
+            <param name="uid">The item's unique identifier.</param>
+            <returns>IHttpActionResult with restored data.</returns>
+        </member>
+        <member name="T:BI.Interface.ApiControllerFactory">
+            <summary>
+            The factory class for construct WebAPI Controller.
+            Factory will auto resolve dependencies API Controller class require.
+            </summary>
+            <remarks>Searching for this on Internet, use "WindsorCompositionRoot" term.</remarks>
+        </member>
+        <member name="F:BI.Interface.ApiControllerFactory._container">
+            <summary>
+            The dependency container.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.ApiControllerFactory.#ctor(Castle.Windsor.IWindsorContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BI.Interface.ApiControllerFactory" /> class.
+            </summary>
+            <param name="container">The dependency container.</param>
+            <exception cref="T:System.Web.Http.HttpResponseException"></exception>
+            <exception cref="T:System.Web.Http.HttpResponseException"></exception>
+        </member>
+        <member name="M:BI.Interface.ApiControllerFactory.Create(System.Net.Http.HttpRequestMessage,System.Web.Http.Controllers.HttpControllerDescriptor,System.Type)">
+            <summary>
+            Resolve dependency when initiate API Controller object.
+            </summary>
+            <param name="request">The request message.</param>
+            <param name="controllerDescriptor">The controller descriptor.</param>
+            <param name="controllerType">Type of the controller.</param>
+            <returns>IHttpController.</returns>
+            <exception cref="T:System.Web.Http.HttpResponseException"></exception>
+            <exception cref="T:System.Web.Http.HttpResponseException">503</exception>
+        </member>
+        <member name="T:BI.Interface.ApiControllerFactory.Release">
+            <summary>
+            Release/Dispose API Controller.
+            </summary>
+        </member>
+        <member name="F:BI.Interface.ApiControllerFactory.Release._release">
+            <summary>
+            The release
+            </summary>
+        </member>
+        <member name="M:BI.Interface.ApiControllerFactory.Release.#ctor(System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BI.Interface.ApiControllerFactory.Release" /> class.
+            </summary>
+            <param name="release">The release.</param>
+        </member>
+        <member name="M:BI.Interface.ApiControllerFactory.Release.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.BundleConfig">
+            <summary>
+            Javascript and CSS bundle configuration.
+            Use only one bundles.
+            </summary>
+            <seealso href="http://go.microsoft.com/fwlink/?LinkId=301862">ASP.Net Bundles</seealso>
+        </member>
+        <member name="M:BI.Interface.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)">
+            <summary>
+            Registers the default ASP.Net MVC bundles.
+            </summary>
+            <param name="bundles">The bundles.</param>
+            <remarks>
+            Use CDN if this application is host on internet environment.
+            </remarks>
+        </member>
+        <member name="M:BI.Interface.BundleConfig.RegisterBundlesForDashboard(System.Web.Optimization.BundleCollection)">
+            <summary>
+            Registers the bundles for dashboard.
+            </summary>
+            <param name="bundles">The bundles.</param>
+        </member>
+        <member name="M:BI.Interface.BundleConfig.RegisterBundlesForFrontEnd(System.Web.Optimization.BundleCollection)">
+            <summary>
+            Registers the bundles for front end.
+            </summary>
+            <param name="bundles">The bundles.</param>
+        </member>
+        <member name="T:BI.Interface.DependencyInstaller">
+            <summary>
+            ASP.NET dependency injection configuration.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.DependencyInstaller.RegisterApplication">
+            <summary>
+            Registers the classes and types in current application/assembly.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.DependencyInstaller.RegisterAssemblies">
+            <summary>
+            Registers the dependency from other assemblies.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.DependencyInstaller.RegisterTypes">
+            <summary>
+            Registers the dependency types.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.ApiControllerInstaller">
+            <summary>
+            Register/Inject API Controller.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.ApiControllerInstaller.Install(Castle.Windsor.IWindsorContainer,Castle.MicroKernel.SubSystems.Configuration.IConfigurationStore)">
+            <summary>
+            Installs the specified container based on IHttpController.
+            </summary>
+            <param name="container">The container.</param>
+            <param name="store">The store.</param>
+        </member>
+        <member name="T:BI.Interface.MvcControllerInstaller">
+            <summary>
+            Register/Inject MVC Controller.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.MvcControllerInstaller.Install(Castle.Windsor.IWindsorContainer,Castle.MicroKernel.SubSystems.Configuration.IConfigurationStore)">
+            <summary>
+            Installs the specified container based on IController.
+            </summary>
+            <param name="container">The container.</param>
+            <param name="store">The store.</param>
+        </member>
+        <member name="T:BI.Interface.ExceptionHandlerConfig">
+            <summary>
+            ASP.NET exception handling configuration.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.ExceptionHandlerConfig.HandlingApplicationError(System.Exception)">
+            <summary>
+            Handlings the global-level application error.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.FilterConfig">
+            <summary>
+            ASP.NET Filter Configuration.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.FilterConfig.RegisterGlobalFilters(System.Web.Mvc.GlobalFilterCollection)">
+            <summary>
+            Registers the global filters.
+            </summary>
+            <param name="filters">The filters.</param>
+            <seealso href="http://hackwebwith.net/asp-net-mvc-5-action-filter-types-overview/">ASP.NET MVC 5 ACTION FILTER TYPES OVERVIEW</seealso>
+            <seealso href="https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps">Canonical URL Tag - The Most Important Advancement in SEO Practices Since Sitemaps</seealso>
+        </member>
+        <member name="T:BI.Interface.MvcControllerFactory">
+            <summary>
+            The factory class for construct MVC Controller.
+            Factory will auto resolve dependencies MVC Controller class require.
+            </summary>
+        </member>
+        <member name="F:BI.Interface.MvcControllerFactory._container">
+            <summary>
+            The dependency container
+            </summary>
+        </member>
+        <member name="M:BI.Interface.MvcControllerFactory.#ctor(Castle.Windsor.IWindsorContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BI.Interface.MvcControllerFactory" /> class.
+            </summary>
+            <param name="container">The dependency container.</param>
+        </member>
+        <member name="M:BI.Interface.MvcControllerFactory.GetControllerInstance(System.Web.Routing.RequestContext,System.Type)">
+            <summary>
+            Retrieves the controller instance for the specified request context and controller type.
+            </summary>
+            <param name="requestContext">The context of the HTTP request, which includes the HTTP context and route data.</param>
+            <param name="controllerType">The type of the controller.</param>
+            <returns>The controller instance.</returns>
+            <exception cref="T:System.Web.HttpException">
+            404
+            or
+            503
+            </exception>
+            <exception cref="T:System.Web.HttpException">404
+            or
+            503</exception>
+        </member>
+        <member name="T:BI.Interface.RouteConfig">
+            <summary>
+            ASP.NET Routing Configuration.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)">
+            <summary>
+            Registers the MVC routes.
+            </summary>
+            <param name="routes">The route collection.</param>
+            <seealso href="http://weblogs.asp.net/rashid/asp-net-mvc-best-practices-part-2#routing">Routing consideration</seealso>
+        </member>
+        <member name="T:BI.Interface.WebApiConfig">
+            <summary>
+            ASP.NET WebAPI Configuration.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Registers the WebAPI specified configuration.
+            </summary>
+            <param name="config">The HTTP configuration.</param>
+        </member>
+        <member name="T:BI.Interface.WebWorkerConfig">
+            <summary>
+            ASP.NET for web worker configuration.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.WebWorkerConfig.RegisterWebWorker">
+            <summary>
+            Registers the web workers for automate work.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.WebWorkerConfig.WebWorker(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            Web worker for automation work.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Timers.ElapsedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.ApiDescriptionExtensions.GetFriendlyId(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Generates an URI-friendly ID for the <see cref="T:System.Web.Http.Description.ApiDescription"/>. E.g. "Get-Values-id_name" instead of "GetValues/{id}?name={name}"
+            </summary>
+            <param name="description">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The ID as a string.</returns>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.HelpPageConfig">
+            <summary>
+            Use this class to customize the Help Page.
+            For example you can set a custom <see cref="T:System.Web.Http.Description.IDocumentationProvider"/> to supply the documentation
+            or you can provide the samples for the requests/responses.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.Controllers.HelpController">
+            <summary>
+            The controller that will handle requests for the help page.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetDocumentationProvider(System.Web.Http.HttpConfiguration,System.Web.Http.Description.IDocumentationProvider)">
+            <summary>
+            Sets the documentation provider for help page.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="documentationProvider">The documentation provider.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleObjects(System.Web.Http.HttpConfiguration,System.Collections.Generic.IDictionary{System.Type,System.Object})">
+            <summary>
+            Sets the objects that will be used by the formatters to produce sample requests/responses.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sampleObjects">The sample objects.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleRequest(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String)">
+            <summary>
+            Sets the sample request directly for the specified media type and action.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample request.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleRequest(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String,System.String[])">
+            <summary>
+            Sets the sample request directly for the specified media type and action with parameters.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample request.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleResponse(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String)">
+            <summary>
+            Sets the sample request directly for the specified media type of the action.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample response.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleResponse(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String,System.String[])">
+            <summary>
+            Sets the sample response directly for the specified media type of the action with specific parameters.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample response.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleForMediaType(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>
+            Sets the sample directly for all actions with the specified media type.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample.</param>
+            <param name="mediaType">The media type.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleForType(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.Type)">
+            <summary>
+            Sets the sample directly for all actions with the specified type and media type.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="type">The parameter type or return type of an action.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualRequestType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String)">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            The help page will use this information to produce more accurate request samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualRequestType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String,System.String[])">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            The help page will use this information to produce more accurate request samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualResponseType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String)">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> returned as part of the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            The help page will use this information to produce more accurate response samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualResponseType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String,System.String[])">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> returned as part of the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            The help page will use this information to produce more accurate response samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Gets the help page sample generator.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <returns>The help page sample generator.</returns>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.SetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration,BI.Interface.Areas.HelpPage.HelpPageSampleGenerator)">
+            <summary>
+            Sets the help page sample generator.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sampleGenerator">The help page sample generator.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.GetModelDescriptionGenerator(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Gets the model description generator.
+            </summary>
+            <param name="config">The configuration.</param>
+            <returns>The <see cref="T:BI.Interface.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator"/></returns>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageApiModel(System.Web.Http.HttpConfiguration,System.String)">
+            <summary>
+            Gets the model that represents an API displayed on the help page. The model is initialized on the first call and cached for subsequent calls.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="apiDescriptionId">The <see cref="T:System.Web.Http.Description.ApiDescription"/> ID.</param>
+            <returns>
+            An <see cref="T:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel"/>
+            </returns>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.ModelDescriptions.ModelDescription">
+            <summary>
+            Describes a type model.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator">
+            <summary>
+            Generates model descriptions for given types.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.ModelDescriptions.ModelNameAttribute">
+            <summary>
+            Use this attribute to change the name of the <see cref="T:BI.Interface.Areas.HelpPage.ModelDescriptions.ModelDescription"/> generated for a type.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel">
+            <summary>
+            The model that represents an API displayed on the help page.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel"/> class.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription">
+            <summary>
+            Gets or sets the <see cref="P:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription"/> that describes the API.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel.UriParameters">
+            <summary>
+            Gets or sets the <see cref="T:BI.Interface.Areas.HelpPage.ModelDescriptions.ParameterDescription"/> collection that describes the URI parameters for the API.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel.RequestDocumentation">
+            <summary>
+            Gets or sets the documentation for the request.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel.RequestModelDescription">
+            <summary>
+            Gets or sets the <see cref="T:BI.Interface.Areas.HelpPage.ModelDescriptions.ModelDescription"/> that describes the request body.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel.RequestBodyParameters">
+            <summary>
+            Gets the request body parameter descriptions.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel.ResourceDescription">
+            <summary>
+            Gets or sets the <see cref="T:BI.Interface.Areas.HelpPage.ModelDescriptions.ModelDescription"/> that describes the resource.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel.ResourceProperties">
+            <summary>
+            Gets the resource property descriptions.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel.SampleRequests">
+            <summary>
+            Gets the sample requests associated with the API.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel.SampleResponses">
+            <summary>
+            Gets the sample responses associated with the API.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.Models.HelpPageApiModel.ErrorMessages">
+            <summary>
+            Gets the error messages associated with this model.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator">
+            <summary>
+            This class will generate the samples for the help page.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator"/> class.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.ActualHttpMessageTypes">
+            <summary>
+            Gets CLR types that are used as the content of <see cref="T:System.Net.Http.HttpRequestMessage"/> or <see cref="T:System.Net.Http.HttpResponseMessage"/>.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples">
+            <summary>
+            Gets the objects that are used directly as samples for certain actions.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects">
+            <summary>
+            Gets the objects that are serialized as samples by the supported formatters.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.SampleObjectFactories">
+            <summary>
+            Gets factories for the objects that the supported formatters will serialize as samples. Processed in order,
+            stopping when the factory successfully returns a non-<see langref="null"/> object.
+            </summary>
+            <remarks>
+            Collection includes just <see cref="M:BI.Interface.Areas.HelpPage.ObjectGenerator.GenerateObject(System.Type)"/> initially. Use
+            <code>SampleObjectFactories.Insert(0, func)</code> to provide an override and
+            <code>SampleObjectFactories.Add(func)</code> to provide a fallback.</remarks>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.GetSampleRequests(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Gets the request body samples for a given <see cref="T:System.Web.Http.Description.ApiDescription"/>.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.GetSampleResponses(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Gets the response body samples for a given <see cref="T:System.Web.Http.Description.ApiDescription"/>.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.GetSample(System.Web.Http.Description.ApiDescription,BI.Interface.Areas.HelpPage.SampleDirection)">
+            <summary>
+            Gets the request or response body samples.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or for a response.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.GetActionSample(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Type,System.Net.Http.Formatting.MediaTypeFormatter,System.Net.Http.Headers.MediaTypeHeaderValue,BI.Interface.Areas.HelpPage.SampleDirection)">
+            <summary>
+            Search for samples that are provided directly through <see cref="P:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples"/>.
+            </summary>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+            <param name="type">The CLR type.</param>
+            <param name="formatter">The formatter.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or for a response.</param>
+            <returns>The sample that matches the parameters.</returns>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.GetSampleObject(System.Type)">
+            <summary>
+            Gets the sample object that will be serialized by the formatters. 
+            First, it will look at the <see cref="P:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects"/>. If no sample object is found, it will try to create
+            one using <see cref="M:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.DefaultSampleObjectFactory(BI.Interface.Areas.HelpPage.HelpPageSampleGenerator,System.Type)"/> (which wraps an <see cref="T:BI.Interface.Areas.HelpPage.ObjectGenerator"/>) and other
+            factories in <see cref="P:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.SampleObjectFactories"/>.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The sample object.</returns>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.ResolveHttpRequestMessageType(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Resolves the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The type.</returns>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.ResolveType(System.Web.Http.Description.ApiDescription,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},BI.Interface.Areas.HelpPage.SampleDirection,System.Collections.ObjectModel.Collection{System.Net.Http.Formatting.MediaTypeFormatter}@)">
+            <summary>
+            Resolves the type of the action parameter or return value when <see cref="T:System.Net.Http.HttpRequestMessage"/> or <see cref="T:System.Net.Http.HttpResponseMessage"/> is used.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or a response.</param>
+            <param name="formatters">The formatters.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleGenerator.WriteSampleObjectUsingFormatter(System.Net.Http.Formatting.MediaTypeFormatter,System.Object,System.Type,System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>
+            Writes the sample object using formatter.
+            </summary>
+            <param name="formatter">The formatter.</param>
+            <param name="value">The value.</param>
+            <param name="type">The type.</param>
+            <param name="mediaType">Type of the media.</param>
+            <returns></returns>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.HelpPageSampleKey">
+            <summary>
+            This is used to identify the place where the sample should be applied.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>
+            Creates a new <see cref="T:BI.Interface.Areas.HelpPage.HelpPageSampleKey"/> based on media type.
+            </summary>
+            <param name="mediaType">The media type.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,System.Type)">
+            <summary>
+            Creates a new <see cref="T:BI.Interface.Areas.HelpPage.HelpPageSampleKey"/> based on media type and CLR type.
+            </summary>
+            <param name="mediaType">The media type.</param>
+            <param name="type">The CLR type.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleKey.#ctor(BI.Interface.Areas.HelpPage.SampleDirection,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new <see cref="T:BI.Interface.Areas.HelpPage.HelpPageSampleKey"/> based on <see cref="P:BI.Interface.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>, controller name, action name and parameter names.
+            </summary>
+            <param name="sampleDirection">The <see cref="P:BI.Interface.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,BI.Interface.Areas.HelpPage.SampleDirection,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new <see cref="T:BI.Interface.Areas.HelpPage.HelpPageSampleKey"/> based on media type, <see cref="P:BI.Interface.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>, controller name, action name and parameter names.
+            </summary>
+            <param name="mediaType">The media type.</param>
+            <param name="sampleDirection">The <see cref="P:BI.Interface.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.HelpPageSampleKey.ControllerName">
+            <summary>
+            Gets the name of the controller.
+            </summary>
+            <value>
+            The name of the controller.
+            </value>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.HelpPageSampleKey.ActionName">
+            <summary>
+            Gets the name of the action.
+            </summary>
+            <value>
+            The name of the action.
+            </value>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.HelpPageSampleKey.MediaType">
+            <summary>
+            Gets the media type.
+            </summary>
+            <value>
+            The media type.
+            </value>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.HelpPageSampleKey.ParameterNames">
+            <summary>
+            Gets the parameter names.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Areas.HelpPage.HelpPageSampleKey.SampleDirection">
+            <summary>
+            Gets the <see cref="P:BI.Interface.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.ImageSample">
+            <summary>
+            This represents an image sample on the help page. There's a display template named ImageSample associated with this class.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.ImageSample.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BI.Interface.Areas.HelpPage.ImageSample"/> class.
+            </summary>
+            <param name="src">The URL of an image.</param>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.InvalidSample">
+            <summary>
+            This represents an invalid sample on the help page. There's a display template named InvalidSample associated with this class.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.ObjectGenerator">
+            <summary>
+            This class will create an object of a given type and populate it with sample data.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.ObjectGenerator.GenerateObject(System.Type)">
+            <summary>
+            Generates an object for a given type. The type needs to be public, have a public default constructor and settable public properties/fields. Currently it supports the following types:
+            Simple types: <see cref="T:System.Int32"/>, <see cref="T:System.String"/>, <see cref="T:System.Enum"/>, <see cref="T:System.DateTime"/>, <see cref="T:System.Uri"/>, etc.
+            Complex types: POCO types.
+            Nullables: <see cref="T:System.Nullable`1"/>.
+            Arrays: arrays of simple types or complex types.
+            Key value pairs: <see cref="T:System.Collections.Generic.KeyValuePair`2"/>
+            Tuples: <see cref="T:System.Tuple`1"/>, <see cref="T:System.Tuple`2"/>, etc
+            Dictionaries: <see cref="T:System.Collections.Generic.IDictionary`2"/> or anything deriving from <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            Collections: <see cref="T:System.Collections.Generic.IList`1"/>, <see cref="T:System.Collections.Generic.IEnumerable`1"/>, <see cref="T:System.Collections.Generic.ICollection`1"/>, <see cref="T:System.Collections.IList"/>, <see cref="T:System.Collections.IEnumerable"/>, <see cref="T:System.Collections.ICollection"/> or anything deriving from <see cref="T:System.Collections.Generic.ICollection`1"/> or <see cref="T:System.Collections.IList"/>.
+            Queryables: <see cref="T:System.Linq.IQueryable"/>, <see cref="T:System.Linq.IQueryable`1"/>.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>An object of the given type.</returns>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.SampleDirection">
+            <summary>
+            Indicates whether the sample is used for request or response
+            </summary>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.TextSample">
+            <summary>
+            This represents a preformatted text sample on the help page. There's a display template named TextSample associated with this class.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.Areas.HelpPage.XmlDocumentationProvider">
+            <summary>
+            A custom <see cref="T:System.Web.Http.Description.IDocumentationProvider"/> that reads the API documentation from an XML documentation file.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Areas.HelpPage.XmlDocumentationProvider.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BI.Interface.Areas.HelpPage.XmlDocumentationProvider"/> class.
+            </summary>
+            <param name="documentPath">The physical path to XML document.</param>
+        </member>
+        <member name="T:BI.Interface.Controllers.BusinessController">
+            <summary>
+            The Business Controller. Also default controller of this application.
+            </summary>
+        </member>
+        <member name="F:BI.Interface.Controllers.BusinessController.DataService">
+            <summary>
+            The data access service
+            </summary>
+        </member>
+        <member name="F:BI.Interface.Controllers.BusinessController._createMapper">
+            <summary>
+            The data mapper for create view model
+            </summary>
+        </member>
+        <member name="F:BI.Interface.Controllers.BusinessController._editMapper">
+            <summary>
+            The data mapper for edit view model
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Controllers.BusinessController.#ctor(BI.Core.Service.IDataService{BI.Core.Models.BusinessInfo},BI.Interface.Infrastructure.Mappers.IMapper{BI.Core.Models.BusinessInfo,BI.Interface.ViewModels.BusinessInfoCreateViewModel},BI.Interface.Infrastructure.Mappers.IMapper{BI.Core.Models.BusinessInfo,BI.Interface.ViewModels.BusinessInfoEditViewModel})">
+            <summary>
+            Initializes a new instance of the <see cref="T:BI.Interface.Controllers.BusinessController" /> class.
+            </summary>
+            <param name="dataService">The data service.</param>
+            <param name="createMapper">The create mapper.</param>
+            <param name="editMapper">The edit mapper.</param>
+        </member>
+        <member name="M:BI.Interface.Controllers.BusinessController.Index">
+            <summary>
+            Landing page.
+            </summary>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="M:BI.Interface.Controllers.BusinessController.New">
+            <summary>
+            Add new business
+            </summary>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="T:BI.Interface.Controllers.BaseMvcController">
+            <summary>
+            Base controller for all MVC controller.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Controllers.BaseMvcController.RedirectToAction``1(System.Linq.Expressions.Expression{System.Action{``0}})">
+            <summary>
+            Microsoft.Web.Mvc Future redirects to action.
+            </summary>
+            <typeparam name="TController">The type of the t controller.</typeparam>
+            <param name="action">The action.</param>
+            <returns>ActionResult.</returns>
+            <remarks>
+            This method allow us not need to use "this" in when return Strong-Type View.
+            </remarks>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Attributes.ModelStateTempDataTransfer">
+            <summary>
+            Base action filter for export and import Model State to TempData.
+            </summary>
+            <seealso href="http://weblogs.asp.net/rashid/asp-net-mvc-best-practices-part-1#prg">Use PRG Pattern for Data Modification</seealso>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Attributes.ExportModelStateToTempDataAttribute">
+            <summary>
+            Attribute for decorates any MVC route that needs to have automatic export Model State to TempData.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Attributes.ExportModelStateToTempDataAttribute.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)">
+            <summary>
+            Called by the ASP.NET MVC framework after the action method executes.
+            </summary>
+            <param name="filterContext">The filter context.</param>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Attributes.ImportModelStateFromTempData">
+            <summary>
+            Attribute for decorates any MVC route that needs to have automatic import Model State to TempData.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Attributes.ImportModelStateFromTempData.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)">
+            <summary>
+            Called by the ASP.NET MVC framework after the action method executes.
+            </summary>
+            <param name="filterContext">The filter context.</param>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Attributes.ThrottleAttribute">
+            <summary>
+            Attribute for decorates any MVC route that needs to have client requests limited by time.
+            Work when deploy in single machine only.
+            </summary>
+            <remarks>Uses the current System.Web.Caching.Cache to store each client request to the decorated route.</remarks>
+            <seealso href="http://stackoverflow.com/questions/33969/best-way-to-implement-request-throttling-in-asp-net-mvc">Best way to implement request throttling in ASP.NET MVC</seealso>
+            <example>
+            [Throttle(Name="TestThrottle", Message = "You must wait {n} seconds before accessing this url again.", Seconds = 5)]
+            public ActionResult TestThrottle()
+            {
+                return Content("TestThrottle executed");
+            }
+            </example>
+        </member>
+        <member name="P:BI.Interface.Infrastructure.Attributes.ThrottleAttribute.Name">
+            <summary>
+            A unique name for this Throttle.
+            </summary>
+            <remarks>
+            We'll be inserting a Cache record based on this name and client IP, e.g. "Name-192.168.0.1"
+            </remarks>
+        </member>
+        <member name="P:BI.Interface.Infrastructure.Attributes.ThrottleAttribute.Seconds">
+            <summary>
+            The number of seconds clients must wait before executing this decorated route again.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Infrastructure.Attributes.ThrottleAttribute.Message">
+            <summary>
+            A text message that will be sent to the client upon throttling.  You can include the token {n} to
+            show this.Seconds in the message, e.g. "Wait {n} seconds before trying again".
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Attributes.ThrottleAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>
+            Called by the ASP.NET MVC framework after the action method executes.
+            </summary>
+            <param name="filterContext">The filter context.</param>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Feedbacks.AlertMessage">
+            <summary>
+            Data model represents the Alert Message.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.Infrastructure.Feedbacks.AlertMessage.CssClass">
+            <summary>
+            Gets or sets the alert message CSS class.
+            </summary>
+            <value>The alert message CSS class.</value>
+        </member>
+        <member name="P:BI.Interface.Infrastructure.Feedbacks.AlertMessage.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+            <value>The message.</value>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Feedbacks.AlertMessage.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BI.Interface.Infrastructure.Feedbacks.AlertMessage"/> class.
+            </summary>
+            <param name="cssClass">The alert message CSS class.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Feedbacks.AlertMessageDecoratorResult">
+            <summary>
+            Action result decorator for adding Alert Message.
+            </summary>
+            <remarks>
+            This decorator standardize alert message and make it easier for developer to use.
+            </remarks>
+        </member>
+        <member name="P:BI.Interface.Infrastructure.Feedbacks.AlertMessageDecoratorResult.InnerResult">
+            <summary>
+            Gets or sets the inner action result.
+            </summary>
+            <value>The inner action result.</value>
+        </member>
+        <member name="P:BI.Interface.Infrastructure.Feedbacks.AlertMessageDecoratorResult.CssClass">
+            <summary>
+            Gets or sets the notification CSS class.
+            </summary>
+            <value>The notification CSS class.</value>
+        </member>
+        <member name="P:BI.Interface.Infrastructure.Feedbacks.AlertMessageDecoratorResult.Message">
+            <summary>
+            Gets or sets the notification message.
+            </summary>
+            <value>The notification message.</value>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Feedbacks.AlertMessageDecoratorResult.#ctor(System.Web.Mvc.ActionResult,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BI.Interface.Infrastructure.Feedbacks.AlertMessageDecoratorResult"/> class.
+            </summary>
+            <param name="innerResult">The inner result.</param>
+            <param name="cssClass">The CSS class.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Feedbacks.AlertMessageDecoratorResult.ExecuteResult(System.Web.Mvc.ControllerContext)">
+            <summary>
+            Enables processing of the result of an action method by a custom type that inherits from the <see cref="T:System.Web.Mvc.ActionResult" /> class.
+            </summary>
+            <param name="context">The context in which the result is executed. The context information includes the controller, HTTP content, request context, and route data.</param>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Feedbacks.AlertExtensions">
+            <summary>
+            Extensions for access (set and get) Alert Messages in TempData.
+            </summary>
+        </member>
+        <member name="F:BI.Interface.Infrastructure.Feedbacks.AlertExtensions.Alerts">
+            <summary>
+            The key for access temp data that contain Alert Messages.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Feedbacks.AlertExtensions.GetAlertMessages(System.Web.Mvc.TempDataDictionary)">
+            <summary>
+            Gets the Alert Messages.
+            </summary>
+            <param name="tempData">The ASP.Net MVC TempData.</param>
+            <returns>List of Alert Message.</returns>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Feedbacks.AlertExtensions.WithSuccessAlertMessage(System.Web.Mvc.ActionResult,System.String)">
+            <summary>
+            Add success alert message to the action result.
+            </summary>
+            <param name="result">The action result.</param>
+            <param name="message">The message.</param>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Feedbacks.AlertExtensions.WithInfoAlertMessage(System.Web.Mvc.ActionResult,System.String)">
+            <summary>
+            Add information alert message to the action result.
+            </summary>
+            <param name="result">The action result.</param>
+            <param name="message">The message.</param>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Feedbacks.AlertExtensions.WithWarningAlertMessage(System.Web.Mvc.ActionResult,System.String)">
+            <summary>
+            Add warning alert message to the action result.
+            </summary>
+            <param name="result">The action result.</param>
+            <param name="message">The message.</param>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Feedbacks.AlertExtensions.WithErrorAlertMessage(System.Web.Mvc.ActionResult,System.String)">
+            <summary>
+            Add error alert message to the action result.
+            </summary>
+            <param name="result">The action result.</param>
+            <param name="message">The message.</param>
+            <returns>ActionResult.</returns>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Filters.ApplicationHandleErrorAttribute">
+            <summary>
+            Filter for application handling error exception.
+            </summary>
+            <remarks>Use filter and Application_Error() will cover all error happens in application.</remarks>
+            <seealso href="http://www.codeproject.com/Articles/850062/Exception-handling-in-ASP-NET-MVC-methods-explaine">ASP.NET MVC Error Exception</seealso>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Filters.ApplicationHandleErrorAttribute.OnException(System.Web.Mvc.ExceptionContext)">
+            <summary>
+            Called when an exception occurs.
+            </summary>
+            <param name="filterContext">The action-filter context.</param>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Filters.ApplicationLoggingFilterAttribute">
+            <summary>
+            Filter for logging application requests.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Filters.ApplicationLoggingFilterAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>
+            Called by the ASP.NET MVC framework before the action method executes.
+            </summary>
+            <param name="filterContext">The filter context.</param>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Filters.LowerCaseFilterAttribute">
+            <summary>
+            Filter for lower case URL when receive GET request.
+            Do not lower case the query string.
+            </summary>
+            <seealso href="http://stackoverflow.com/questions/14048338/create-filter-to-ensure-lowercase-urls">Create filter to ensure lowercase urls</seealso>
+            <seealso href="http://stackoverflow.com/questions/878578/how-can-i-have-lowercase-routes-in-asp-net-mvc">How can I have lowercase routes in ASP.NET MVC?</seealso>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Filters.LowerCaseFilterAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>
+            Called by the ASP.NET MVC framework before the action method executes.
+            </summary>
+            <param name="filterContext">The filter context.</param>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Filters.RemoveTrailingSlashFilterAttribute">
+            <summary>
+            Filter for remove trailing slash (/) behind URL.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Filters.RemoveTrailingSlashFilterAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>
+            Called by the ASP.NET MVC framework before the action method executes.
+            </summary>
+            <param name="filterContext">The filter context.</param>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Filters.CanonicalizeHostnameFilterAttribute">
+            <summary>
+            Filter for remove www in front of URL.
+            </summary>
+            <seealso cref="!:http://stackoverflow.com/questions/4882508/how-to-remove-the-www-prefix-in-asp-net-mvc">How to remove the www. prefix in ASP.NET MVC</seealso>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Filters.CanonicalizeHostnameFilterAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>
+            Called by the ASP.NET MVC framework before the action method executes.
+            </summary>
+            <param name="filterContext">The filter context.</param>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Filters.ViewModelUserFilterAttribute">
+            <summary>
+            Decorates any MVC route that needs to automatically add user information into every view model.
+            </summary>
+            <seealso href="http://weblogs.asp.net/rashid/asp-net-mvc-best-practices-part-1#viewModelSuperLayer">Create Layer Super Type for your ViewModel and Use Action Filter to populate common parts</seealso>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Filters.ViewModelUserFilterAttribute.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)">
+            <summary>
+            Called by the ASP.NET MVC framework after the action method executes.
+            </summary>
+            <param name="filterContext">The filter context.</param>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Helpers.MvcExtensions">
+            <summary>
+            Extensions for assist ASP.Net MVC development.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Helpers.MvcExtensions.ToSelectList``1(``0)">
+            <summary>
+            Populates the SelectList from enumerable type.
+            </summary>
+            <typeparam name="TEnum">IComparable, IFormattable, IConvertible based enumerable type.</typeparam>
+            <param name="enumObj">The enumerable object.</param>
+            <returns>SelectList.</returns>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Helpers.MvcHelper">
+            <summary>
+            Ready-to-Use helper for assist ASP.NET MVC development.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Helpers.MvcHelper.PopulateSelectItemList``1(System.Boolean)">
+            <summary>
+            Populates the list of SelectListItem from enumerable type.
+            </summary>
+            <typeparam name="TEnum">Struct, IComparable, IFormattable, IConvertible based enumerable type.</typeparam>
+            <param name="useTextOnly">if set to <c>true</c> [use enum text only].</param>
+            <returns>List of SelectListItem.</returns>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Helpers.MvcHelper.RenderViewToString(System.Web.Mvc.Controller,System.String,System.Object,System.String)">
+            <summary>
+            Renders the page view to string.
+            Useful if want to send partial view to client with JSON.
+            </summary>
+            <param name="controller">The controller.</param>
+            <param name="viewName">Name of the view.</param>
+            <param name="model">The model.</param>
+            <param name="viewStyle">The view style.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            controller
+            or
+            viewName
+            or
+            model
+            or
+            viewStyle
+            </exception>
+            <exception cref="T:System.ArgumentNullException">controller
+            or
+            viewName
+            or
+            model
+            or
+            viewStyle</exception>
+            <seealso href="http://stackoverflow.com/questions/1471066/partial-views-vs-json-or-both">Pass Partial View on JSON</seealso>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Mappers.EntitiesToInts">
+            <summary>
+            Map data entities to integer.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Mappers.EntitiesToInts.Match(Omu.ValueInjecter.ConventionInfo)">
+            <summary>
+            Matching entity and integer for mapping.
+            </summary>
+            <param name="c">ConventionInfo</param>
+            <returns>Match or not</returns>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Mappers.EntitiesToInts.SetValue(Omu.ValueInjecter.ConventionInfo)">
+            <summary>
+            Set value to entity.
+            </summary>
+            <param name="v">ConventionInfo</param>
+            <returns>Null or entity object</returns>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Mappers.EntityToNullInt">
+            <summary>
+            Map data entities to nullable integer.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Mappers.EntityToNullInt.TypesMatch(System.Type,System.Type)">
+            <summary>
+            Matching entity and nullable integer for mapping
+            </summary>
+            <param name="sourceType">Source type</param>
+            <param name="targetType">Target type</param>
+            <returns>Match or not</returns>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Mappers.EntityToNullInt.SetValue(System.Object)">
+            <summary>
+            Set value to entity
+            </summary>
+            <param name="o">Any object</param>
+            <returns>Null or entity object</returns>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Mappers.IMapper`2">
+            <summary>
+            The interface for data model mapper.
+            </summary>
+            <typeparam name="TEntity">Data entity (Data model)</typeparam>
+            <typeparam name="TInput">View model (Create/Edit view model)</typeparam>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Mappers.IMapper`2.MapToView(`0)">
+            <summary>
+            Mapping data model to view model
+            </summary>
+            <param name="entity">Data entity (data model)</param>
+            <returns>Entity in view model format</returns>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Mappers.IMapper`2.MapToEntity(`1,`0)">
+            <summary>
+            Mapping view model to data model (entity)
+            </summary>
+            <param name="input">View model (Create/Edit view model)</param>
+            <param name="entity">Data entity (Data model)</param>
+            <returns>Entity in data model format</returns>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Mappers.IntsToEntities">
+            <summary>
+            Map integer to any data entities.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Mappers.IntsToEntities.Match(Omu.ValueInjecter.ConventionInfo)">
+            <summary>
+            Matching entity and integer for mapping
+            </summary>
+            <param name="c">ConventionInfo</param>
+            <returns>Match or not</returns>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Mappers.IntsToEntities.SetValue(Omu.ValueInjecter.ConventionInfo)">
+            <summary>
+            Set value to entity
+            </summary>
+            <param name="c">ConventionInfo</param>
+            <returns>Null or entity object</returns>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Mappers.Mapper`2">
+            <summary>
+            Data model mapper.
+            </summary>
+            <typeparam name="TEntity">Data entity (data model)</typeparam>
+            <typeparam name="TInput">View model (Create/Edit view model)</typeparam>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Mappers.Mapper`2.MapToView(`0)">
+            <summary>
+            Mapping data model to view model.
+            </summary>
+            <param name="entity">Data entity (data model)</param>
+            <returns>Entity in view model format</returns>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Mappers.Mapper`2.MapToEntity(`1,`0)">
+            <summary>
+            Mapping view model to data model (entity).
+            </summary>
+            <param name="input">View model (Create/Edit view model)</param>
+            <param name="entity">Data entity (Data model)</param>
+            <returns>Entity in data model format</returns>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Mappers.NormalToNullables">
+            <summary>
+            Map standard data type (int, datetime, float, etc,.) to nullable type.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Mappers.NormalToNullables.Match(Omu.ValueInjecter.ConventionInfo)">
+            <summary>
+            Matching standard data type (int, datetime, float, etc,.) for mapping.
+            </summary>
+            <param name="c">ConventionInfo</param>
+            <returns>Match or not</returns>
+        </member>
+        <member name="T:BI.Interface.Infrastructure.Mappers.NullablesToNormal">
+            <summary>
+            Map nullable type to standard data type (int, datetime, float, etc,.).
+            </summary>
+        </member>
+        <member name="M:BI.Interface.Infrastructure.Mappers.NullablesToNormal.Match(Omu.ValueInjecter.ConventionInfo)">
+            <summary>
+            Matching standard datatype (int, datetime) for mapping
+            </summary>
+            <param name="c">ConventionInfo</param>
+            <returns>Match or not</returns>
+        </member>
+        <member name="T:BI.Interface.Helpers.DataTransformFilter">
+            <summary>
+            SAMPLE : Action filter for automatically transform input parameters before go to XXX view model.
+            </summary>
+            <seealso href="http://weblogs.asp.net/rashid/asp-net-mvc-best-practices-part-1#actionFilterConvert">Use Action Filter to Convert to compatible Action Methods parameters</seealso>
+        </member>
+        <member name="M:BI.Interface.Helpers.DataTransformFilter.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>
+            Called by the ASP.NET MVC framework before the action method executes.
+            </summary>
+            <param name="filterContext">The filter context.</param>
+        </member>
+        <member name="T:BI.Interface.HttpContextFactory">
+            <summary>
+            <para>Factory pattern for HttpContext</para>
+            <para>This make HttpContext mockable in unit test</para>
+            </summary>
+            <example>
+            <para>Production: Do not need to setup anything</para>
+            <para>Unit test : HttpContextFactory.SetCurrentContext(BiTestHelpers.GetMockedHttpContext());</para>
+            </example>
+        </member>
+        <member name="F:BI.Interface.HttpContextFactory._httpContext">
+            <summary>
+            The HttpContext
+            </summary>
+        </member>
+        <member name="P:BI.Interface.HttpContextFactory.GetHttpContext">
+            <summary>
+            Gets the HttpContext (if available).
+            </summary>
+            <value>The HttpContext.</value>
+            <exception cref="T:System.InvalidOperationException">HttpContext not available</exception>
+        </member>
+        <member name="M:BI.Interface.HttpContextFactory.SetCurrentContext(System.Web.HttpContextBase)">
+            <summary>
+            Sets the HttpContext.
+            </summary>
+            <param name="context">The HttpContext.</param>
+        </member>
+        <member name="T:BI.Interface.UrlHelperExtension">
+            <summary>
+            Extension to UrlHelper by add following features
+            <para>- Quick access file and folder path.</para>
+            </summary>
+        </member>
+        <member name="M:BI.Interface.UrlHelperExtension.Root(System.Web.Mvc.UrlHelper)">
+            <summary>
+            Get application's root path.
+            </summary>
+            <param name="helper">The Url helper.</param>
+            <returns>Application root path.</returns>
+            <example>@Url.Root()</example>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BI.Interface.UrlHelperExtension.Login(System.Web.Mvc.UrlHelper)" -->
+        <!-- Badly formed XML comment ignored for member "M:BI.Interface.UrlHelperExtension.SignUp(System.Web.Mvc.UrlHelper)" -->
+        <!-- Badly formed XML comment ignored for member "M:BI.Interface.UrlHelperExtension.Dashboard(System.Web.Mvc.UrlHelper)" -->
+        <member name="M:BI.Interface.UrlHelperExtension.NoIcon(System.Web.Mvc.UrlHelper)">
+            <summary>
+            Get application's No Icon image for show when no picture to display.
+            </summary>
+            <param name="helper">The Url helper.</param>
+            <returns>Application's No Icon image</returns>
+            <example>@Url.NoIcon()</example>
+        </member>
+        <member name="F:BI.Interface.UrlHelperExtension.imagePath">
+            <summary>
+            The image folder path
+            </summary>
+        </member>
+        <member name="F:BI.Interface.UrlHelperExtension.videoPath">
+            <summary>
+            The video folder path
+            </summary>
+        </member>
+        <member name="F:BI.Interface.UrlHelperExtension.scriptPath">
+            <summary>
+            The script folder path
+            </summary>
+        </member>
+        <member name="F:BI.Interface.UrlHelperExtension.stylesSheetPath">
+            <summary>
+            The styles sheet folder path
+            </summary>
+        </member>
+        <member name="M:BI.Interface.UrlHelperExtension.Image(System.Web.Mvc.UrlHelper,System.String)">
+            <summary>
+            Get application's image file path.
+            </summary>
+            <param name="helper">The Url helper.</param>
+            <param name="fileName">Name of the file.</param>
+            <returns>Application's image path.</returns>
+            <example>@Url.Image("filename.jpg")</example>
+        </member>
+        <member name="M:BI.Interface.UrlHelperExtension.Video(System.Web.Mvc.UrlHelper,System.String)">
+            <summary>
+            Get application's video file path.
+            </summary>
+            <param name="helper">The Url helper.</param>
+            <param name="fileName">Name of the file.</param>
+            <returns>Application's video path.</returns>
+            <example>@Url.Video("filename.mp4")</example>
+        </member>
+        <member name="M:BI.Interface.UrlHelperExtension.Script(System.Web.Mvc.UrlHelper,System.String)">
+            <summary>
+            Get application's script file path.
+            </summary>
+            <param name="helper">The Url helper.</param>
+            <param name="fileName">Name of the file.</param>
+            <returns>Application's script path.</returns>
+            <example>@Url.Script("filename.js")</example>
+        </member>
+        <member name="M:BI.Interface.UrlHelperExtension.Stylesheet(System.Web.Mvc.UrlHelper,System.String)">
+            <summary>
+            Get application's stylesheet file path.
+            </summary>
+            <param name="helper">The Url helper.</param>
+            <param name="fileName">Name of the file.</param>
+            <returns>Application's stylesheets path.</returns>
+            <example>@Url.Stylesheet("filename.css")</example>
+        </member>
+        <member name="T:BI.Interface.WebApiApplication">
+            <summary>
+            Web application's main class
+            </summary>
+        </member>
+        <member name="M:BI.Interface.WebApiApplication.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:BI.Interface.WebApiApplication"/> class.
+            </summary>
+            <remarks>Inject all required dependencies.</remarks>
+        </member>
+        <member name="M:BI.Interface.WebApiApplication.Application_Start">
+            <summary>
+            Starting application.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.WebApiApplication.Application_End">
+            <summary>
+            Quitting application, release all resources.
+            </summary>
+        </member>
+        <member name="M:BI.Interface.WebApiApplication.Application_Error(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Error event of the Application control.
+            This is global error handling which will show when everything was failed.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:BI.Interface.ViewModels.BusinessInfoCreateViewModel">
+            <summary>
+            Create view model of BusinessInfo.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.ViewModels.BusinessInfoEditViewModel">
+            <summary>
+            Edit view model of BusinessInfo.
+            </summary>
+        </member>
+        <member name="T:BI.Interface.ViewModels.SearchPageViewModel">
+            <summary>
+            View model of search page.
+            </summary>
+        </member>
+        <member name="P:BI.Interface.ViewModels.SearchPageViewModel.Query">
+            <summary>
+            Gets or sets the search query.
+            </summary>
+            <value>The search query.</value>
+        </member>
+        <member name="P:BI.Interface.ViewModels.SearchPageViewModel.BuyerList">
+            <summary>
+            Gets or sets the buyer list.
+            </summary>
+            <value>The buyer list.</value>
+        </member>
+        <member name="P:BI.Interface.ViewModels.SearchPageViewModel.SellerList">
+            <summary>
+            Gets or sets the seller list.
+            </summary>
+            <value>The seller list.</value>
+        </member>
+        <member name="T:BI.Interface.ViewModels.EntityViewModel">
+            <summary>
+            Base class for all view model.
+            This class use with action filer "ViewModelUserFilter", which automatically add set "IsUserAuthenticated" and "UserName".
+            </summary>
+        </member>
+        <member name="P:BI.Interface.ViewModels.EntityViewModel.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:BI.Interface.ViewModels.EntityViewModel.IsUserAuthenticated">
+            <summary>
+            Gets or sets a value indicating whether this instance is user authenticated.
+            </summary>
+            <value><c>true</c> if this instance is user authenticated; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:BI.Interface.ViewModels.EntityViewModel.UserName">
+            <summary>
+            Gets or sets the name of the user.
+            </summary>
+            <value>The name of the user.</value>
+        </member>
+    </members>
+</doc>

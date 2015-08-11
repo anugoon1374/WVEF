@@ -1,0 +1,18 @@
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\Output\Libraries\Release\BI.Service.dll.config
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\Output\Libraries\Release\BI.Service.dll
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\Output\Libraries\Release\BI.Service.pdb
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\BI.Service\obj\Release\BI.Service.csprojResolveAssemblyReference.cache
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\BI.Service\obj\Release\BI.Service.dll
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\BI.Service\obj\Release\BI.Service.pdb
+H:\The Box\Agilite\Avantgarde\Output\Libraries\Release\BI.Service.dll.config
+H:\The Box\Agilite\Avantgarde\Output\Libraries\Release\BI.Service.dll
+H:\The Box\Agilite\Avantgarde\Output\Libraries\Release\BI.Service.pdb
+H:\The Box\Agilite\Avantgarde\BI.Service\obj\Release\BI.Service.csprojResolveAssemblyReference.cache
+H:\The Box\Agilite\Avantgarde\BI.Service\obj\Release\BI.Service.dll
+H:\The Box\Agilite\Avantgarde\BI.Service\obj\Release\BI.Service.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Release\BI.Service.dll.config
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Release\BI.Service.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Release\BI.Service.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Service\obj\Release\BI.Service.csprojResolveAssemblyReference.cache
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Service\obj\Release\BI.Service.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Service\obj\Release\BI.Service.pdb

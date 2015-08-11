@@ -1,0 +1,13 @@
+﻿@using BI.Interface.Infrastructure.Feedbacks
+@if (TempData.GetAlertMessages().Any())
+{
+    <div class="container alert-container">
+        @foreach (var message in TempData.GetAlertMessages())
+        {
+            <div class="alert @message.CssClass alert-dismissable">
+                <button type="button" class="close" dat-dismiss="alert" aria-hidden="true">&times;</button>
+                @message.Message
+            </div>
+        }
+    </div>
+}

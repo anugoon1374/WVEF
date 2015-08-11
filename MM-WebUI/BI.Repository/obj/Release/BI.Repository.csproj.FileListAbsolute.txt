@@ -1,0 +1,6 @@
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Release\BI.Repository.dll.config
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Release\BI.Repository.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Release\BI.Repository.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Repository\obj\Release\BI.Repository.csprojResolveAssemblyReference.cache
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Repository\obj\Release\BI.Repository.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Repository\obj\Release\BI.Repository.pdb

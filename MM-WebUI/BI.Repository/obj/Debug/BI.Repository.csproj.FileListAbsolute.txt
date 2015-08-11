@@ -1,0 +1,36 @@
+E:\01-Works\01-Working Projects\01-Agilité\1.0.4\Inspira\BI.Repository\obj\Debug\BI.Repository.csprojResolveAssemblyReference.cache
+E:\01-Works\01-Working Projects\01-Agilité\1.0.4\Inspira\Output\Libraries\Debug\BI.Repository.dll.config
+E:\01-Works\01-Working Projects\01-Agilité\1.0.4\Inspira\Output\Libraries\Debug\BI.Repository.dll
+E:\01-Works\01-Working Projects\01-Agilité\1.0.4\Inspira\Output\Libraries\Debug\BI.Repository.pdb
+E:\01-Works\01-Working Projects\01-Agilité\1.0.4\Inspira\BI.Repository\obj\Debug\BI.Repository.dll
+E:\01-Works\01-Working Projects\01-Agilité\1.0.4\Inspira\BI.Repository\obj\Debug\BI.Repository.pdb
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\Output\Libraries\Debug\BI.Repository.dll.config
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\Output\Libraries\Debug\BI.Repository.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\Output\Libraries\Debug\BI.Repository.pdb
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Repository\obj\Debug\BI.Repository.csprojResolveAssemblyReference.cache
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Repository\obj\Debug\BI.Repository.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Repository\obj\Debug\BI.Repository.pdb
+H:\The Box\Projects\Agilite\Inspira\Output\Libraries\Debug\BI.Repository.dll.config
+H:\The Box\Projects\Agilite\Inspira\Output\Libraries\Debug\BI.Repository.dll
+H:\The Box\Projects\Agilite\Inspira\Output\Libraries\Debug\BI.Repository.pdb
+H:\The Box\Projects\Agilite\Inspira\BI.Repository\obj\Debug\BI.Repository.csprojResolveAssemblyReference.cache
+H:\The Box\Projects\Agilite\Inspira\BI.Repository\obj\Debug\BI.Repository.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Repository\obj\Debug\BI.Repository.pdb
+C:\Users\Anugoon\Desktop\Agilite\Inspira\Output\Libraries\Debug\BI.Repository.dll.config
+C:\Users\Anugoon\Desktop\Agilite\Inspira\Output\Libraries\Debug\BI.Repository.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\Output\Libraries\Debug\BI.Repository.pdb
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Repository\obj\Debug\BI.Repository.csprojResolveAssemblyReference.cache
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Repository\obj\Debug\BI.Repository.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Repository\obj\Debug\BI.Repository.pdb
+C:\Users\Inspira\Desktop\Agilite\Inspira\Output\Libraries\Debug\BI.Repository.dll.config
+C:\Users\Inspira\Desktop\Agilite\Inspira\Output\Libraries\Debug\BI.Repository.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\Output\Libraries\Debug\BI.Repository.pdb
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Repository\obj\Debug\BI.Repository.csprojResolveAssemblyReference.cache
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Repository\obj\Debug\BI.Repository.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Repository\obj\Debug\BI.Repository.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Repository\obj\Debug\BI.Repository.csprojResolveAssemblyReference.cache
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Repository\obj\Debug\BI.Repository.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Repository\obj\Debug\BI.Repository.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Debug\BI.Repository.dll.config
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Debug\BI.Repository.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Debug\BI.Repository.pdb

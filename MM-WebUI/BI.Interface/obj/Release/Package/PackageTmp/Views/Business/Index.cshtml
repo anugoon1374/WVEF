@@ -1,0 +1,98 @@
+﻿@using Castle.Core.Internal
+@model BI.Interface.ViewModels.SearchPageViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Market Matcher";
+}
+
+@Styles.Render("~/Content/css-card")
+
+<div class="row" style="margin:50px 0 0 0">
+    <div class="col-md-12" align="center">
+        <img src="@Url.Image("logo.png")" alt="logo" class="img-responsive" />
+    </div>
+</div>
+<div class="row" style="margin: 50px 0 50px 0">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6" align="center">
+        @using (Html.BeginForm())
+        {
+            @*<input type="text" class="form-control" placeholder="" width="100%" style="width: 100% !important; margin-bottom: 10px"/>*@
+            @Html.EditorFor(model => model.Query, new { htmlAttributes = new { @class = "form-control", @placeholder = "Type in business, product or service name" } })
+            <input type="submit" value="Search Potential Business" class="btn btn-primary" style="margin-top: 10px" />
+        }
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
+
+<div class="row" id="result">
+
+    <div class="col-md-6">
+        <h2 align="center">
+            Potential Seller
+            <img src="@Url.Image("sell.png")" alt="logo" class="img-responsive" style="display: inline" />
+        </h2>
+
+        @foreach (var item in Model.SellerList)
+        {
+            <div class="card">
+                <h3 class="card-heading simple">@item.CompanyName</h3>
+                <div class="card-body">
+                    <p>
+                        Sell : @item.Sell<br />
+                        Contact : @item.CompanyName @if (@item.ContactJobTitle.Length == 0)
+                        { @item.ContactJobTitle }<br />
+                        @item.ContactDescription
+                    <p>
+                </div>
+            </div>
+        }
+
+        @if (Model.SellerList.Count == 0)
+        {
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        There is no potential seller match your search criteria. Why don't you register yours.<br />
+                        @Html.ActionLink("Click here to register your business", "New", "", new { area = "" }, null)
+                    <p>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="col-md-6">
+        <h2 align="center">
+            <img src="@Url.Image("buy.png")" alt="logo" class="img-responsive" style="display: inline" />
+            Potential Buyer
+        </h2>
+        @foreach (var item in Model.BuyerList)
+        {
+            <div class="card">
+                <h3 class="card-heading simple">@item.CompanyName</h3>
+                <div class="card-body">
+                    <p>
+                        Buy : @item.Buy<br />
+                        Contact : @item.CompanyName @if (@item.ContactJobTitle.Length == 0)
+                        { @item.ContactJobTitle }<br />
+                        @item.ContactDescription
+                    <p>
+                </div>
+            </div>
+        }
+
+        @if (Model.BuyerList.Count == 0)
+        {
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        There is no potential buyer match your search criteria. Why don't you register yours.<br/>
+                        @Html.ActionLink("Click here to register your business", "New", "", new { area = "" }, null)
+                    <p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

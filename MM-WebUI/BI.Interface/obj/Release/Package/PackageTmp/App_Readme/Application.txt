@@ -1,0 +1,38 @@
+ 
+ 
+ "Lasciate ogne speranza, voi ch'intrate" - Dante's Inferno
+ 
+
+
+========================================
+CUSTOM FOLDERS
+========================================
+
+
+
+
+========================================
+DEPENDENCIES
+========================================
+1. Elmah, for logging error
+2. Glimpse, for performance assortment
+
+
+========================================
+ASSETS
+========================================
+Assets is a folder for keeping application content and script files.
+
+1. Why don't use Content and Scripts folder?
+The reason I separate because when update-package via NuGet it will update files in Content folder and Scripts folder. 
+This will cause libraries import manually to break and it is very difficult to fix.
+
+2. How to use it?
+It is not recommend to access the file folder directly. Please use UrlHelper to access them instead.
+
+Example.
+<link href="<%= Url.Stylesheet("site.css")%>" rel="stylesheet" type="text/css"/>
+instead of
+<link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+
+If you want to change file path, check "UrlHelper.cs" in "Helper" folder.

@@ -1,0 +1,331 @@
+E:\01-Works\01-Working Projects\01-Agilité\1.0.4\Inspira\BI.Interface\obj\Debug\BI.Interface.csprojResolveAssemblyReference.cache
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\BI.Interface.dll.config
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\BI.Interface.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\BI.Interface.pdb
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\XmlDocument.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\Antlr3.Runtime.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\BI.Auxiliary.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\BI.Core.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\BI.Infrastructure.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\BI.Repository.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\BI.Service.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\Elmah.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\Microsoft.Web.Infrastructure.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\Newtonsoft.Json.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\Omu.ValueInjecter.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Net.Http.Formatting.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.Helpers.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.Http.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.Http.WebHost.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.Mvc.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.Optimization.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.Razor.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Deployment.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Razor.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\WebGrease.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Spatial.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\EntityFramework.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\EntityFramework.BulkInsert.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\AWSSDK.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\BI.Auxiliary.Algorithms.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\ePCubeCSVConverterLib.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\EntityFramework.MappingAPI.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\CsvHelper.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\BI.Core.pdb
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\BI.Repository.pdb
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\BI.Service.pdb
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\Antlr3.Runtime.pdb
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\Newtonsoft.Json.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\Omu.ValueInjecter.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Net.Http.Formatting.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.Helpers.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.Http.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.Http.WebHost.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.Mvc.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.Razor.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Deployment.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Razor.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Web.Optimization.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\System.Spatial.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\EntityFramework.xml
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\EntityFramework.BulkInsert.pdb
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\AWSSDK.pdb
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\EntityFramework.MappingAPI.pdb
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\de\System.Spatial.resources.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\es\System.Spatial.resources.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\fr\System.Spatial.resources.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\it\System.Spatial.resources.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\ja\System.Spatial.resources.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\ko\System.Spatial.resources.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\ru\System.Spatial.resources.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\zh-Hans\System.Spatial.resources.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\bin\zh-Hant\System.Spatial.resources.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\obj\Debug\BI.Interface.csprojResolveAssemblyReference.cache
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\obj\Debug\BI.Interface.dll
+E:\01-Works\01-Working Projects\01-Agilité\Agilite\Inspira\BI.Interface\obj\Debug\BI.Interface.pdb
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\BI.Interface.dll.config
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\BI.Interface.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\BI.Interface.pdb
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\XmlDocument.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\Antlr3.Runtime.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\BI.Auxiliary.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\BI.Core.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\BI.Infrastructure.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\BI.Repository.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\BI.Service.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\Elmah.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\Microsoft.Web.Infrastructure.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\Newtonsoft.Json.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\Omu.ValueInjecter.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Net.Http.Formatting.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.Helpers.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.Http.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.Http.WebHost.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.Mvc.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.Optimization.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.Razor.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Deployment.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Razor.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\WebGrease.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Spatial.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\EntityFramework.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\EntityFramework.BulkInsert.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\AWSSDK.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\BI.Auxiliary.Algorithms.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\ePCubeCSVConverterLib.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\EntityFramework.MappingAPI.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\CsvHelper.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\BI.Core.pdb
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\BI.Repository.pdb
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\BI.Service.pdb
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\Antlr3.Runtime.pdb
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\Newtonsoft.Json.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\Omu.ValueInjecter.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Net.Http.Formatting.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.Helpers.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.Http.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.Http.WebHost.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.Mvc.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.Razor.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Deployment.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Razor.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Web.Optimization.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\System.Spatial.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\EntityFramework.xml
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\EntityFramework.BulkInsert.pdb
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\AWSSDK.pdb
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\EntityFramework.MappingAPI.pdb
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\de\System.Spatial.resources.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\es\System.Spatial.resources.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\fr\System.Spatial.resources.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\it\System.Spatial.resources.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\ja\System.Spatial.resources.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\ko\System.Spatial.resources.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\ru\System.Spatial.resources.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\zh-Hans\System.Spatial.resources.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\bin\zh-Hant\System.Spatial.resources.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\obj\Debug\BI.Interface.csprojResolveAssemblyReference.cache
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\obj\Debug\BI.Interface.dll
+H:\The Box\Projects\Agilite\Inspira\BI.Interface\obj\Debug\BI.Interface.pdb
+H:\The Box\Projects\AgiliteX\Inspira\BI.Interface\obj\Debug\BI.Interface.csprojResolveAssemblyReference.cache
+H:\The Box\Projects\AgiliteX\Inspira\BI.Interface\obj\Debug\BI.Interface.dll
+H:\The Box\Projects\AgiliteX\Inspira\BI.Interface\obj\Debug\BI.Interface.pdb
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\obj\Debug\BI.Interface.csprojResolveAssemblyReference.cache
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\obj\Debug\BI.Interface.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\obj\Debug\BI.Interface.pdb
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Interface.dll.config
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Interface.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Interface.pdb
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\XmlDocument.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\Antlr3.Runtime.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Auxiliary.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Core.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Infrastructure.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Repository.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Service.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\Elmah.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\Newtonsoft.Json.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\Omu.ValueInjecter.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Net.Http.Formatting.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Helpers.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Http.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Http.WebHost.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Mvc.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Optimization.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Razor.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Razor.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\WebGrease.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Spatial.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\EntityFramework.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\EntityFramework.BulkInsert.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\AWSSDK.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Auxiliary.Algorithms.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\ePCubeCSVConverterLib.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\EntityFramework.MappingAPI.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\CsvHelper.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Core.pdb
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Repository.pdb
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Service.pdb
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\Antlr3.Runtime.pdb
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\Newtonsoft.Json.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\Omu.ValueInjecter.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Net.Http.Formatting.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Helpers.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Http.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Http.WebHost.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Mvc.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Razor.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Razor.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Optimization.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\System.Spatial.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\EntityFramework.xml
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\EntityFramework.BulkInsert.pdb
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\AWSSDK.pdb
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\EntityFramework.MappingAPI.pdb
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\de\System.Spatial.resources.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\es\System.Spatial.resources.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\fr\System.Spatial.resources.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\it\System.Spatial.resources.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\ja\System.Spatial.resources.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\ko\System.Spatial.resources.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\ru\System.Spatial.resources.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Anugoon\Desktop\Agilite\Inspira\BI.Interface\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\obj\Debug\BI.Interface.csprojResolveAssemblyReference.cache
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\obj\Debug\BI.Interface.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\obj\Debug\BI.Interface.pdb
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Interface.dll.config
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Interface.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Interface.pdb
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\XmlDocument.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\Antlr3.Runtime.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Auxiliary.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Core.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Infrastructure.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Repository.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Service.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\Elmah.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\Microsoft.Web.Mvc.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\Newtonsoft.Json.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\Omu.ValueInjecter.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Net.Http.Formatting.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Helpers.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Http.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Http.WebHost.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Mvc.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Optimization.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Razor.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Razor.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\WebGrease.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Spatial.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\EntityFramework.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\EntityFramework.BulkInsert.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\AWSSDK.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Auxiliary.Algorithms.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\ePCubeCSVConverterLib.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\EntityFramework.MappingAPI.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\CsvHelper.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Core.pdb
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Repository.pdb
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\BI.Service.pdb
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\Antlr3.Runtime.pdb
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\Newtonsoft.Json.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\Omu.ValueInjecter.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Net.Http.Formatting.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Helpers.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Http.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Http.WebHost.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Mvc.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Razor.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.WebPages.Razor.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Web.Optimization.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\System.Spatial.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\EntityFramework.xml
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\EntityFramework.BulkInsert.pdb
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\AWSSDK.pdb
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\EntityFramework.MappingAPI.pdb
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\de\System.Spatial.resources.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\es\System.Spatial.resources.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\fr\System.Spatial.resources.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\it\System.Spatial.resources.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\ja\System.Spatial.resources.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\ko\System.Spatial.resources.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\ru\System.Spatial.resources.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Inspira\Desktop\Agilite\Inspira\BI.Interface\bin\zh-Hant\System.Spatial.resources.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\BI.Interface.dll.config
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\BI.Interface.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\BI.Interface.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\XmlDocument.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\Antlr3.Runtime.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\BI.Auxiliary.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\BI.Core.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\BI.Infrastructure.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\BI.Service.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\Elmah.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\Microsoft.Web.Infrastructure.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\Microsoft.Web.Mvc.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\Newtonsoft.Json.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\Omu.ValueInjecter.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Net.Http.Formatting.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.Helpers.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.Http.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.Http.WebHost.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.Mvc.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.Optimization.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.Razor.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.WebPages.Deployment.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.WebPages.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.WebPages.Razor.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\WebGrease.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Spatial.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\BI.Core.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\BI.Service.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\Antlr3.Runtime.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\Newtonsoft.Json.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\Omu.ValueInjecter.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Net.Http.Formatting.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.Helpers.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.Http.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.Http.WebHost.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.Mvc.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.Razor.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.WebPages.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.WebPages.Deployment.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.WebPages.Razor.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Web.Optimization.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\System.Spatial.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\de\System.Spatial.resources.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\es\System.Spatial.resources.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\fr\System.Spatial.resources.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\it\System.Spatial.resources.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\ja\System.Spatial.resources.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\ko\System.Spatial.resources.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\ru\System.Spatial.resources.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\zh-Hans\System.Spatial.resources.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\zh-Hant\System.Spatial.resources.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\obj\Debug\BI.Interface.csprojResolveAssemblyReference.cache
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\obj\Debug\BI.Interface.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\obj\Debug\BI.Interface.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\BI.Repository.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\EntityFramework.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\EntityFramework.BulkInsert.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\EntityFramework.MappingAPI.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\BI.Repository.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\EntityFramework.xml
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\EntityFramework.BulkInsert.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Interface\bin\EntityFramework.MappingAPI.pdb

@@ -1,0 +1,33 @@
+c:\users\inspira\documents\visual studio 2013\Projects\Avantgarde\Output\Debug\BI.Service.dll.config
+c:\users\inspira\documents\visual studio 2013\Projects\Avantgarde\Output\Debug\BI.Service.dll
+c:\users\inspira\documents\visual studio 2013\Projects\Avantgarde\Output\Debug\BI.Service.pdb
+c:\users\inspira\documents\visual studio 2013\Projects\Avantgarde\BI.Service\obj\Debug\BI.Service.csprojResolveAssemblyReference.cache
+c:\users\inspira\documents\visual studio 2013\Projects\Avantgarde\Output\Libraries\Debug\BI.Service.dll.config
+c:\users\inspira\documents\visual studio 2013\Projects\Avantgarde\Output\Libraries\Debug\BI.Service.dll
+c:\users\inspira\documents\visual studio 2013\Projects\Avantgarde\Output\Libraries\Debug\BI.Service.pdb
+c:\users\inspira\documents\visual studio 2013\Projects\Avantgarde\BI.Service\obj\Debug\BI.Service.dll
+c:\users\inspira\documents\visual studio 2013\Projects\Avantgarde\BI.Service\obj\Debug\BI.Service.pdb
+H:\The Box\0.5.0 - Restructure Avantgarde\Avantgarde\BI.Service\obj\Debug\BI.Service.csprojResolveAssemblyReference.cache
+H:\The Box\0.5.0 - Restructure Avantgarde\Avantgarde\BI.Service\obj\Debug\BI.Service.dll
+H:\The Box\0.5.0 - Restructure Avantgarde\Avantgarde\BI.Service\obj\Debug\BI.Service.pdb
+H:\The Box\0.5.0 - Restructure Avantgarde\Avantgarde\Output\Libraries\Debug\BI.Service.dll.config
+H:\The Box\0.5.0 - Restructure Avantgarde\Avantgarde\Output\Libraries\Debug\BI.Service.dll
+H:\The Box\0.5.0 - Restructure Avantgarde\Avantgarde\Output\Libraries\Debug\BI.Service.pdb
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\Output\Libraries\Debug\BI.Service.dll.config
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\Output\Libraries\Debug\BI.Service.dll
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\Output\Libraries\Debug\BI.Service.pdb
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\BI.Service\obj\Debug\BI.Service.csprojResolveAssemblyReference.cache
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\BI.Service\obj\Debug\BI.Service.dll
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\BI.Service\obj\Debug\BI.Service.pdb
+H:\The Box\Agilite\Avantgarde\Output\Libraries\Debug\BI.Service.dll.config
+H:\The Box\Agilite\Avantgarde\Output\Libraries\Debug\BI.Service.dll
+H:\The Box\Agilite\Avantgarde\Output\Libraries\Debug\BI.Service.pdb
+H:\The Box\Agilite\Avantgarde\BI.Service\obj\Debug\BI.Service.csprojResolveAssemblyReference.cache
+H:\The Box\Agilite\Avantgarde\BI.Service\obj\Debug\BI.Service.dll
+H:\The Box\Agilite\Avantgarde\BI.Service\obj\Debug\BI.Service.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Debug\BI.Service.dll.config
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Debug\BI.Service.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Debug\BI.Service.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Service\obj\Debug\BI.Service.csprojResolveAssemblyReference.cache
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Service\obj\Debug\BI.Service.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Service\obj\Debug\BI.Service.pdb

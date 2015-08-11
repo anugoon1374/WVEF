@@ -1,0 +1,30 @@
+C:\Users\Inspira\Documents\Visual Studio 2013\Projects\Avantgarde\Output\Debug\BI.Core.dll
+C:\Users\Inspira\Documents\Visual Studio 2013\Projects\Avantgarde\Output\Debug\BI.Core.pdb
+C:\Users\Inspira\Documents\Visual Studio 2013\Projects\Avantgarde\Output\Libraries\Debug\BI.Core.dll
+C:\Users\Inspira\Documents\Visual Studio 2013\Projects\Avantgarde\Output\Libraries\Debug\BI.Core.pdb
+C:\Users\Inspira\Documents\Visual Studio 2013\Projects\Avantgarde\BI.Core\obj\Debug\BI.Core.dll
+C:\Users\Inspira\Documents\Visual Studio 2013\Projects\Avantgarde\BI.Core\obj\Debug\BI.Core.pdb
+D:\01-Working Projects\01-Agilité\0.5.0 - Completely Loose Coupling\Avantgarde\Output\Libraries\Debug\BI.Core.dll
+D:\01-Working Projects\01-Agilité\0.5.0 - Completely Loose Coupling\Avantgarde\Output\Libraries\Debug\BI.Core.pdb
+D:\01-Working Projects\01-Agilité\0.5.0 - Completely Loose Coupling\Avantgarde\BI.Core\obj\Debug\BI.Core.csprojResolveAssemblyReference.cache
+D:\01-Working Projects\01-Agilité\0.5.0 - Completely Loose Coupling\Avantgarde\BI.Core\obj\Debug\BI.Core.dll
+D:\01-Working Projects\01-Agilité\0.5.0 - Completely Loose Coupling\Avantgarde\BI.Core\obj\Debug\BI.Core.pdb
+H:\The Box\0.5.0 - Restructure Avantgarde\Avantgarde\BI.Core\obj\Debug\BI.Core.dll
+H:\The Box\0.5.0 - Restructure Avantgarde\Avantgarde\BI.Core\obj\Debug\BI.Core.pdb
+H:\The Box\0.5.0 - Restructure Avantgarde\Avantgarde\Output\Libraries\Debug\BI.Core.dll
+H:\The Box\0.5.0 - Restructure Avantgarde\Avantgarde\Output\Libraries\Debug\BI.Core.pdb
+H:\The Box\0.5.0 - Restructure Avantgarde\Avantgarde\BI.Core\obj\Debug\BI.Core.csprojResolveAssemblyReference.cache
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\Output\Libraries\Debug\BI.Core.dll
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\Output\Libraries\Debug\BI.Core.pdb
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\BI.Core\obj\Debug\BI.Core.dll
+H:\The Box\0.5.0 - Restructure Solution\Avantgarde\BI.Core\obj\Debug\BI.Core.pdb
+H:\The Box\Agilite\Avantgarde\Output\Libraries\Debug\BI.Core.dll
+H:\The Box\Agilite\Avantgarde\Output\Libraries\Debug\BI.Core.pdb
+H:\The Box\Agilite\Avantgarde\BI.Core\obj\Debug\BI.Core.dll
+H:\The Box\Agilite\Avantgarde\BI.Core\obj\Debug\BI.Core.pdb
+H:\The Box\Agilite\Avantgarde\BI.Core\obj\Debug\BI.Core.csprojResolveAssemblyReference.cache
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Core\obj\Debug\BI.Core.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Core\obj\Debug\BI.Core.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Debug\BI.Core.dll
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\Output\Libraries\Debug\BI.Core.pdb
+C:\Code\Beyond Inspira\Market Matcher\Prototype\MM-WebUI\BI.Core\obj\Debug\BI.Core.csprojResolveAssemblyReference.cache

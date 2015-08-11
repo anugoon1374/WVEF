@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BI.Core", "BI.Core\BI.Core.csproj", "{EDEA5F99-D96F-4137-B091-D7F66233D098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BI.Service", "BI.Service\BI.Service.csproj", "{7931CCC4-41D2-4CD8-A281-F73FD53BE3B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BI.Interface", "BI.Interface\BI.Interface.csproj", "{D9378039-CEB8-4237-B3F8-E4C50B007154}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BI.Repository", "BI.Repository\BI.Repository.csproj", "{AC91F25D-BA94-4825-B438-339EA7036229}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BI.Tests", "BI.Tests\BI.Tests.csproj", "{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDEA5F99-D96F-4137-B091-D7F66233D098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDEA5F99-D96F-4137-B091-D7F66233D098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDEA5F99-D96F-4137-B091-D7F66233D098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDEA5F99-D96F-4137-B091-D7F66233D098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7931CCC4-41D2-4CD8-A281-F73FD53BE3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7931CCC4-41D2-4CD8-A281-F73FD53BE3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7931CCC4-41D2-4CD8-A281-F73FD53BE3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7931CCC4-41D2-4CD8-A281-F73FD53BE3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9378039-CEB8-4237-B3F8-E4C50B007154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9378039-CEB8-4237-B3F8-E4C50B007154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9378039-CEB8-4237-B3F8-E4C50B007154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9378039-CEB8-4237-B3F8-E4C50B007154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC91F25D-BA94-4825-B438-339EA7036229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC91F25D-BA94-4825-B438-339EA7036229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC91F25D-BA94-4825-B438-339EA7036229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC91F25D-BA94-4825-B438-339EA7036229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://beyondinspira.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BI.Core\\BI.Core.csproj
+		SccProjectName1 = BI.Core
+		SccLocalPath1 = BI.Core
+		SccProjectUniqueName2 = BI.Service\\BI.Service.csproj
+		SccProjectName2 = BI.Service
+		SccLocalPath2 = BI.Service
+		SccProjectUniqueName3 = BI.Interface\\BI.Interface.csproj
+		SccProjectName3 = BI.Interface
+		SccLocalPath3 = BI.Interface
+		SccProjectUniqueName4 = BI.Repository\\BI.Repository.csproj
+		SccProjectName4 = BI.Repository
+		SccLocalPath4 = BI.Repository
+		SccProjectUniqueName5 = BI.Tests\\BI.Tests.csproj
+		SccProjectName5 = BI.Tests
+		SccLocalPath5 = BI.Tests
+	EndGlobalSection
+EndGlobal
